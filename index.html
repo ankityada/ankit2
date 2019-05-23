@@ -1,7 +1,80 @@
+<!DOCTYPE html>
 <html>
-<head>
-</head>
-<body>
-<h1>hellow ankit</h1>
-</body>
+    <head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Blank App</title>
+		<style>
+		button{
+        width:74px;
+        height:30px;
+        background-color:orange;
+        border:4px 4px 4px 4px;
+        }
+		.login{
+		width:343px;
+		height:434px;
+		border:2px solid lightgreen;
+		}
+		.btntext{
+        border-left:hidden;
+        border-right:hidden;
+        border-top:hidden;
+        border-bottom:2px solid lightgreen;
+        font-family:book-antique;
+        width:250px;
+        height:40px;
+        font-size:20px;
+        }
+		.btntext2{
+        border-left:hidden;
+        border-right:hidden;
+        border-top:hidden;
+        border-bottom:2px solid lightgreen;
+        width:250px;
+        height:40px;
+        font-size:20px;
+        }
+
+        .btn{
+        background-color:lightgreen;
+        width:200px;
+        height:50px;
+        border-radius:24px 24px 24px 24px;
+
+
+        }
+        .btn:hover{
+        background-color:white;
+        border:2px solid lightgreen; 
+        }
+        p{
+        font-size:134%;
+        }
+        #big{
+        margin-top:-80px;
+        }
+		</style>
+		<script language="javascript">
+		function msg(){
+        var username=document.getElementById('text1').value;
+		alert("welcome   "+username);
+		
+        }
+        </script>
+    </head>
+    <body>
+	<center><h1>IDMaker</h1>
+	<div class="login">
+	<center><h1></h1><br>
+    <p>Username:</p>
+    <i class="fa fa-user-circle-o fa-2x" aria-hidden="true" > <input type="Text" class="btntext" id="text1"></i></br>
+    <p>Password:</p>
+    <i class="fa fa-unlock-alt fa-2x" aria-hidden="true">  <input type="password" class="btntext2"></i></br>
+    <br><br><input type="button"  value="Submit" class="btn" onclick="msg()"/></br>
+	<br><a href="#">Forget password</a>
+	</div></center>
+        <script type="text/javascript" src="cordova.js"></script>
+    </body>
 </html>
